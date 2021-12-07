@@ -71,6 +71,13 @@ On localhost development mode if u want to make some changes into JS files you s
 sail yarn
 ```
 
+# Issues
+
+1. If you accidentally ran `sail up` without .env file run:
+```bash
+sail down --rmi all -v
+```
+
 # Support
 
 If u stuck and can't run all this commands properly contact: [vati@redberry.ge](mailto:vati@redberry.ge)
