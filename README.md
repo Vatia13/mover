@@ -51,13 +51,19 @@ Once the application's Docker containers have been started, You can access the a
 
 For the first usage you have to run commands below:
 
-1. Migrate database tables
+1. Generate laravel application key
+
+```bash
+sail php artisan key:generate
+```
+
+2. Migrate database tables
 
 ```bash
 sail php artisan migrate
 ```
 
-2. Install node_modules
+3. Install node_modules
 
 On localhost development mode if u want to make some changes into JS files you should run yarn to install node_modules:
 
