@@ -47,7 +47,17 @@ Form more information about how Laravel Sail is interacting with Docker environm
 
 # Usage
 
-Once the application's Docker containers have been started, you can access the application in your web browser at: http://localhost
+Once the application's Docker containers have been started, You can access the application in your web browser at: http://localhost
+
+For the first usage you have to run commands below:
+
+1. Migrate database tables
+
+```bash
+sail php artisan migrate
+```
+
+2. Install node_modules
 
 On localhost development mode if u want to make some changes into JS files you should run yarn to install node_modules:
 
